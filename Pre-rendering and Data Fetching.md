@@ -9,10 +9,11 @@ npx create-next-app nextjs-blog --use-npm --example "https://github.com/vercel/n
 ```
 Sau đó làm theo hướng dẫn trong command line (cd vào thư mục và khởi động máy chủ phát triển).  
 Bạn cũng nên cập nhật các tệp sau:  
+```
 public/images/profile.jpg with your photo (Recommended: 400px width/height).  
 const name = '[Your Name]' in components/layout.js với tên bạn.  
 <p>[Your Self Introduction]</p> in pages/index.js với giới thiệu về bản thân bạn
-
+```
 ## Pre-rendering
 Trong bài học này, chúng ta sẽ tìm hiểu cách tìm nạp dữ liệu blog bên ngoài vào ứng dụng của mình. Chúng tôi sẽ lưu trữ nội dung blog trong file system (hệ thống tệp), nhưng nó sẽ hoạt động nếu nội dung được lưu trữ ở nơi khác (ví dụ: cơ sở dữ liệu).
 #### Bạn sẽ học được gì trong bài học này
