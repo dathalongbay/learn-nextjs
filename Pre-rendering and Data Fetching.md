@@ -35,5 +35,6 @@ Bạn có thể kiểm tra xem quá trình kết xuất trước có đang diễ
 - Tắt JavaScript trong trình duyệt của bạn (đây là cách thực hiện trong Chrome) và… 
 - Hãy thử truy cập trang này (kết quả cuối cùng của hướng dẫn này).
 Bạn sẽ thấy rằng ứng dụng của bạn được hiển thị mà không có JavaScript. Đó là vì Next.js đã hiển thị trước ứng dụng thành HTML tĩnh, cho phép bạn xem giao diện người dùng ứng dụng mà không cần chạy JavaScript.
+> Lưu ý: Bạn cũng có thể thử các bước trên trên máy chủ localhost, nhưng CSS sẽ không được tải nếu bạn tắt JavaScript.
 
 
