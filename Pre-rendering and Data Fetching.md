@@ -47,6 +47,8 @@ Bây giờ, hãy tắt JavaScript và truy cập lại vào cùng một trang. B
 ![image](https://user-images.githubusercontent.com/6966136/179656119-32e4fc84-53bc-45e6-9c31-1fab61b80e1f.png)
 ![image](https://user-images.githubusercontent.com/6966136/179656142-0e23a234-1e91-47d8-bc8f-dfd03ade65ef.png)
 Tiếp theo, hãy nói về hai hình thức kết xuất trước trong Next.js.
+## Two Forms of Pre-rendering
+Next.js có 2 hình thức của pre-rendering: Static Generation and Server-side Rendering. Sự khác biệt là khi nó tạo ra html cho 1 trang 
 
 
 
