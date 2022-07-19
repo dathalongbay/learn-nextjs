@@ -75,6 +75,66 @@ Trong trường hợp đó, bạn có thể sử dụng Kết xuất phía máy 
 #### We’ll Focus on Static Generation
 Trong bài học này, chúng ta sẽ tập trung vào Tạo tĩnh. Trên trang tiếp theo, chúng ta sẽ nói về Tạo tĩnh có và không có dữ liệu.
 
+## Static Generation with and without Data
+Tạo tĩnh có thể được thực hiện có và không có dữ liệu.
+Cho đến nay, tất cả các trang chúng tôi đã tạo không yêu cầu tìm nạp dữ liệu bên ngoài. Các trang đó sẽ tự động được tạo tĩnh khi ứng dụng built for production.
+
+![image](https://user-images.githubusercontent.com/6966136/179660140-f2c99fb1-60c6-44cc-875c-33e658d92501.png)
+
+Tuy nhiên, đối với một số trang, bạn không thể hiển thị HTML mà không tìm nạp một số dữ liệu bên ngoài trước. Có thể bạn cần truy cập hệ thống tệp, tìm nạp API bên ngoài hoặc truy vấn cơ sở dữ liệu của mình tại thời điểm xây dựng.
+
+ Next.js supports this case — Static Generation with data — out of the box.
+ ![image](https://user-images.githubusercontent.com/6966136/179660324-3c44879a-c1f1-4f40-92b4-8a30196b2606.png)
+### Static Generation with Data using getStaticProps
+Làm thế nào nó hoạt động? Trong Next.js, khi bạn xuất một thành phần trang, bạn cũng có thể xuất một hàm không đồng bộ được gọi là getStaticProps. Nếu bạn làm điều này, thì:
+```
+getStaticProps runs at build time in production, and…
+```
+Inside the function, you can fetch external data and send it as props to the page.
+```
+export default function Home(props) { ... }
+
+export async function getStaticProps() {
+  // Get external data from the file system, API, DB, etc.
+  const data = ...
+
+  // The value of the `props` key will be
+  //  passed to the `Home` component
+  return {
+    props: ...
+  }
+}
+```
+
+Pre-rendering and Data Fetching
+Static Generation with and without Data
+Static Generation can be done with and without data.
+
+So far, all the pages we’ve created do not require fetching external data. Those pages will automatically be statically generated when the app is built for production.
+
+
+However, for some pages, you might not be able to render the HTML without first fetching some external data. Maybe you need to access the file system, fetch external API, or query your database at build time. Next.js supports this case — Static Generation with data — out of the box.
+
+
+Static Generation with Data using getStaticProps
+How does it work? Well, in Next.js, when you export a page component, you can also export an async function called getStaticProps. If you do this, then:
+
+getStaticProps runs at build time in production, and…
+Inside the function, you can fetch external data and send it as props to the page.
+export default function Home(props) { ... }
+
+export async function getStaticProps() {
+  // Get external data from the file system, API, DB, etc.
+  const data = ...
+
+  // The value of the `props` key will be
+  //  passed to the `Home` component
+  return {
+    props: ...
+  }
+}
+Essentially, getStaticProps allows you to tell Next.js: “Hey, this page has some data dependencies — so when you pre-render this page at build time, make sure to resolve them first!”
+
 
 
 
