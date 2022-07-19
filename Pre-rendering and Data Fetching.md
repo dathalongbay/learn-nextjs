@@ -60,6 +60,22 @@ Quan trọng hơn, Next.js cho phép bạn chọn hình thức kết xuất trư
 
 ![image](https://user-images.githubusercontent.com/6966136/179657698-9513d152-c2f7-4522-843e-a8a73afc6a64.png)
 #### Khi nào thì dùng Static Generation v.s. Server-side Rendering
+Chúng tôi khuyên bạn nên sử dụng Static Generation (có và không có dữ liệu) bất cứ khi nào có thể vì trang của bạn có thể được tạo một lần và được CDN phân phát, điều này làm cho nó nhanh hơn nhiều so với việc máy chủ hiển thị trang theo mọi yêu cầu  
+Bạn có thể sử dụng Tạo tĩnh cho nhiều loại trang, bao gồm: 
+- Các trang tiếp thị 
+- Bài đăng trên blog 
+- Danh sách sản phẩm thương mại điện tử 
+- Trợ giúp và tài liệu
+Bạn nên tự hỏi bản thân: "Tôi có thể hiển thị trước trang này trước yêu cầu của người dùng không?" Nếu câu trả lời là có, thì bạn nên chọn Static Generation.  
+
+Mặt khác, Static Generation không phải là một ý tưởng hay nếu bạn không thể kết xuất trước một trang trước yêu cầu của người dùng. Có thể trang của bạn hiển thị dữ liệu được cập nhật thường xuyên và nội dung trang thay đổi theo mọi yêu cầu.  
+
+Trong trường hợp đó, bạn có thể sử dụng Kết xuất phía máy chủ. Nó sẽ chậm hơn, nhưng trang kết xuất trước sẽ luôn được cập nhật. Hoặc bạn có thể bỏ qua kết xuất trước và sử dụng JavaScript phía máy khách để điền dữ liệu được cập nhật thường xuyên.
+
+#### We’ll Focus on Static Generation
+Trong bài học này, chúng ta sẽ tập trung vào Tạo tĩnh. Trên trang tiếp theo, chúng ta sẽ nói về Tạo tĩnh có và không có dữ liệu.
+
+
 
 
 
