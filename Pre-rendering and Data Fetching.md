@@ -136,6 +136,12 @@ export async function getStaticProps() {
 }
 ```
 Essentially, getStaticProps allows you to tell Next.js: “Hey, this page has some data dependencies — so when you pre-render this page at build time, make sure to resolve them first!”
+> Note: In development mode, getStaticProps runs on each request instead.
+
+Let’s Use getStaticProps
+It’s easier to learn by doing, so starting from the next page, we’ll use getStaticProps to implement our blog.
+
+
 
 
 
