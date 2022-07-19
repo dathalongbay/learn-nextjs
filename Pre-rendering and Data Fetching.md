@@ -27,6 +27,9 @@ const name = '[Your Name]' in components/layout.js với tên bạn.
 <p>[Your Self Introduction]</p> in pages/index.js với giới thiệu về bản thân bạn
 ```
 ## Pre-rendering
+Trước khi chúng ta nói về tìm nạp dữ liệu, hãy nói về một trong những khái niệm quan trọng nhất trong Next.js: Pre-rendering Kết xuất trước.   
+Theo mặc định, Next.js hiển thị trước mọi trang. Điều này có nghĩa là Next.js tạo trước HTML cho từng trang, thay vì để tất cả được thực hiện bởi JavaScript phía máy khách. Kết xuất trước có thể mang lại hiệu suất và SEO tốt hơn.  
+Mỗi HTML được tạo được liên kết với mã JavaScript minimal cần thiết cho trang đó. Khi một trang được tải bởi trình duyệt, mã JavaScript của trang đó sẽ chạy và làm cho trang tương tác hoàn toàn. (Quá trình này được gọi là quá trình hydrat hóa.)  
 
 
 
