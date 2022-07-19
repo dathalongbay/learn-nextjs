@@ -53,7 +53,8 @@ Next.js có 2 hình thức của pre-rendering: Static Generation and Server-sid
 - Server-side Rendering là pre-rendering method mà sinh ra html trên mỗi request
 ![image](https://user-images.githubusercontent.com/6966136/179657236-eee52822-7131-4ca8-9c55-999800dab589.png)
 ![image](https://user-images.githubusercontent.com/6966136/179657256-4bb216bb-6762-4ff3-aeb8-0d2f79e5e556.png)
-
+> In development mode (when you run npm run dev or yarn dev), every page is pre-rendered on each request — thậm chí cho các trang đang sử dụng cơ chế Static Generation.
+> 
 
 
 
