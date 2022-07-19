@@ -54,8 +54,12 @@ Next.js có 2 hình thức của pre-rendering: Static Generation and Server-sid
 ![image](https://user-images.githubusercontent.com/6966136/179657236-eee52822-7131-4ca8-9c55-999800dab589.png)
 ![image](https://user-images.githubusercontent.com/6966136/179657256-4bb216bb-6762-4ff3-aeb8-0d2f79e5e556.png)
 > In development mode (when you run npm run dev or yarn dev), every page is pre-rendered on each request — thậm chí cho các trang đang sử dụng cơ chế Static Generation.
-> 
 
+#### Per-page Basis
+Quan trọng hơn, Next.js cho phép bạn chọn hình thức kết xuất trước để sử dụng cho mỗi trang. Bạn có thể tạo ứng dụng Next.js "kết hợp" bằng cách sử dụng Tạo tĩnh cho hầu hết các trang và sử dụng Kết xuất phía máy chủ cho các trang khác.
+
+![image](https://user-images.githubusercontent.com/6966136/179657698-9513d152-c2f7-4522-843e-a8a73afc6a64.png)
+#### Khi nào thì dùng Static Generation v.s. Server-side Rendering
 
 
 
