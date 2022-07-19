@@ -121,6 +121,7 @@ How does it work? Well, in Next.js, when you export a page component, you can al
 
 getStaticProps runs at build time in production, and…
 Inside the function, you can fetch external data and send it as props to the page.
+```
 export default function Home(props) { ... }
 
 export async function getStaticProps() {
@@ -133,6 +134,7 @@ export async function getStaticProps() {
     props: ...
   }
 }
+```
 Essentially, getStaticProps allows you to tell Next.js: “Hey, this page has some data dependencies — so when you pre-render this page at build time, make sure to resolve them first!”
 
 
