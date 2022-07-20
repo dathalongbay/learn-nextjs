@@ -38,3 +38,8 @@ learn-nextjs
 # Kafka
 - https://kipalog.com/posts/Series-Tim-Hieu-Apache-Kafka--phan-1
 
+# Mongoose
+https://viblo.asia/p/mongoose-cho-mongodb-nodejs-Qbq5QWvJZD8
+https://code.tutsplus.com/vi/articles/an-introduction-to-mongoose-for-mongodb-and-nodejs--cms-29527
+
+
