@@ -40,6 +40,7 @@ learn-nextjs
 
 # Mongoose
 https://viblo.asia/p/mongoose-cho-mongodb-nodejs-Qbq5QWvJZD8
+
 https://code.tutsplus.com/vi/articles/an-introduction-to-mongoose-for-mongodb-and-nodejs--cms-29527
 
 
